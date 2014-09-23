@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
 
 
   s.source_files  = "TQRemoveController/**/*.{h,m}"
+  s.requires_arc = true
 end

@@ -1,682 +1,1324 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		E0E584911998E2EB00387DE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E584901998E2EB00387DE2 /* Foundation.framework */; };
-		E0E584931998E2EB00387DE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E584921998E2EB00387DE2 /* CoreGraphics.framework */; };
-		E0E584951998E2EB00387DE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E584941998E2EB00387DE2 /* UIKit.framework */; };
-		E0E5849B1998E2EB00387DE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0E584991998E2EB00387DE2 /* InfoPlist.strings */; };
-		E0E5849D1998E2EB00387DE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E5849C1998E2EB00387DE2 /* main.m */; };
-		E0E584A11998E2EB00387DE2 /* TQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E584A01998E2EB00387DE2 /* TQAppDelegate.m */; };
-		E0E584A41998E2EB00387DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0E584A21998E2EB00387DE2 /* Main.storyboard */; };
-		E0E584A71998E2EB00387DE2 /* TQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E584A61998E2EB00387DE2 /* TQViewController.m */; };
-		E0E584A91998E2EB00387DE2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0E584A81998E2EB00387DE2 /* Images.xcassets */; };
-		E0E584B01998E2EB00387DE2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E584AF1998E2EB00387DE2 /* XCTest.framework */; };
-		E0E584B11998E2EC00387DE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E584901998E2EB00387DE2 /* Foundation.framework */; };
-		E0E584B21998E2EC00387DE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E584941998E2EB00387DE2 /* UIKit.framework */; };
-		E0E584BA1998E2EC00387DE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0E584B81998E2EC00387DE2 /* InfoPlist.strings */; };
-		E0E584BC1998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E584BB1998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests.m */; };
-		E0E584FA1998E35500387DE2 /* POPAnimatableProperty.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584C91998E35500387DE2 /* POPAnimatableProperty.mm */; };
-		E0E584FB1998E35500387DE2 /* POPAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584CB1998E35500387DE2 /* POPAnimation.mm */; };
-		E0E584FC1998E35500387DE2 /* POPAnimationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584CD1998E35500387DE2 /* POPAnimationEvent.mm */; };
-		E0E584FD1998E35500387DE2 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584D01998E35500387DE2 /* POPAnimationExtras.mm */; };
-		E0E584FE1998E35500387DE2 /* POPAnimationRuntime.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584D41998E35500387DE2 /* POPAnimationRuntime.mm */; };
-		E0E584FF1998E35500387DE2 /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584D61998E35500387DE2 /* POPAnimationTracer.mm */; };
-		E0E585001998E35500387DE2 /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584D91998E35500387DE2 /* POPAnimator.mm */; };
-		E0E585011998E35500387DE2 /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584DC1998E35500387DE2 /* POPBasicAnimation.mm */; };
-		E0E585021998E35500387DE2 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584DF1998E35500387DE2 /* POPCGUtils.mm */; };
-		E0E585031998E35500387DE2 /* POPCustomAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584E11998E35500387DE2 /* POPCustomAnimation.mm */; };
-		E0E585041998E35500387DE2 /* POPDecayAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584E31998E35500387DE2 /* POPDecayAnimation.mm */; };
-		E0E585051998E35500387DE2 /* POPGeometry.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584E71998E35500387DE2 /* POPGeometry.mm */; };
-		E0E585061998E35500387DE2 /* POPLayerExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584E91998E35500387DE2 /* POPLayerExtras.mm */; };
-		E0E585071998E35500387DE2 /* POPMath.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584EB1998E35500387DE2 /* POPMath.mm */; };
-		E0E585081998E35500387DE2 /* POPPropertyAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584ED1998E35500387DE2 /* POPPropertyAnimation.mm */; };
-		E0E585091998E35500387DE2 /* POPSpringAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584F01998E35500387DE2 /* POPSpringAnimation.mm */; };
-		E0E5850A1998E35500387DE2 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0E584F41998E35500387DE2 /* POPVector.mm */; };
-		E0E5850B1998E35500387DE2 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E0E584F71998E35500387DE2 /* TransformationMatrix.cpp */; };
-		E0E5850F1998E3AC00387DE2 /* TQTableViewCellRemoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E5850E1998E3AC00387DE2 /* TQTableViewCellRemoveController.m */; };
-		E0E5851119990FAA00387DE2 /* TQCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E5851019990FAA00387DE2 /* TQCell.xib */; };
-		E0E585171999107600387DE2 /* TQCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E585161999107600387DE2 /* TQCell.m */; };
-		E0E5851F199913EC00387DE2 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0E58519199913EC00387DE2 /* 0.jpg */; };
-		E0E58520199913EC00387DE2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0E5851A199913EC00387DE2 /* 1.jpg */; };
-		E0E58521199913EC00387DE2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0E5851B199913EC00387DE2 /* 2.jpg */; };
-		E0E58522199913EC00387DE2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0E5851C199913EC00387DE2 /* 3.jpg */; };
-		E0E58523199913EC00387DE2 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0E5851D199913EC00387DE2 /* 4.jpg */; };
-		E0E58524199913EC00387DE2 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0E5851E199913EC00387DE2 /* 5.jpg */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E0E584B31998E2EC00387DE2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E0E584851998E2EB00387DE2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E0E5848C1998E2EB00387DE2;
-			remoteInfo = TQTableViewCellRemoveController;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		E0E5848D1998E2EB00387DE2 /* TQTableViewCellRemoveController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TQTableViewCellRemoveController.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E584901998E2EB00387DE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E0E584921998E2EB00387DE2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E0E584941998E2EB00387DE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E0E584981998E2EB00387DE2 /* TQTableViewCellRemoveController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TQTableViewCellRemoveController-Info.plist"; sourceTree = "<group>"; };
-		E0E5849A1998E2EB00387DE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E0E5849C1998E2EB00387DE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E0E5849E1998E2EB00387DE2 /* TQTableViewCellRemoveController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TQTableViewCellRemoveController-Prefix.pch"; sourceTree = "<group>"; };
-		E0E5849F1998E2EB00387DE2 /* TQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TQAppDelegate.h; sourceTree = "<group>"; };
-		E0E584A01998E2EB00387DE2 /* TQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TQAppDelegate.m; sourceTree = "<group>"; };
-		E0E584A31998E2EB00387DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E0E584A51998E2EB00387DE2 /* TQViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TQViewController.h; sourceTree = "<group>"; };
-		E0E584A61998E2EB00387DE2 /* TQViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TQViewController.m; sourceTree = "<group>"; };
-		E0E584A81998E2EB00387DE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E0E584AE1998E2EB00387DE2 /* TQTableViewCellRemoveControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TQTableViewCellRemoveControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E0E584AF1998E2EB00387DE2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E0E584B71998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TQTableViewCellRemoveControllerTests-Info.plist"; sourceTree = "<group>"; };
-		E0E584B91998E2EC00387DE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E0E584BB1998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TQTableViewCellRemoveControllerTests.m; sourceTree = "<group>"; };
-		E0E584C61998E35500387DE2 /* POP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POP.h; sourceTree = "<group>"; };
-		E0E584C71998E35500387DE2 /* POPAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAction.h; sourceTree = "<group>"; };
-		E0E584C81998E35500387DE2 /* POPAnimatableProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimatableProperty.h; sourceTree = "<group>"; };
-		E0E584C91998E35500387DE2 /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimatableProperty.mm; sourceTree = "<group>"; };
-		E0E584CA1998E35500387DE2 /* POPAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimation.h; sourceTree = "<group>"; };
-		E0E584CB1998E35500387DE2 /* POPAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimation.mm; sourceTree = "<group>"; };
-		E0E584CC1998E35500387DE2 /* POPAnimationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationEvent.h; sourceTree = "<group>"; };
-		E0E584CD1998E35500387DE2 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimationEvent.mm; sourceTree = "<group>"; };
-		E0E584CE1998E35500387DE2 /* POPAnimationEventInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationEventInternal.h; sourceTree = "<group>"; };
-		E0E584CF1998E35500387DE2 /* POPAnimationExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationExtras.h; sourceTree = "<group>"; };
-		E0E584D01998E35500387DE2 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimationExtras.mm; sourceTree = "<group>"; };
-		E0E584D11998E35500387DE2 /* POPAnimationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationInternal.h; sourceTree = "<group>"; };
-		E0E584D21998E35500387DE2 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationPrivate.h; sourceTree = "<group>"; };
-		E0E584D31998E35500387DE2 /* POPAnimationRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationRuntime.h; sourceTree = "<group>"; };
-		E0E584D41998E35500387DE2 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimationRuntime.mm; sourceTree = "<group>"; };
-		E0E584D51998E35500387DE2 /* POPAnimationTracer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationTracer.h; sourceTree = "<group>"; };
-		E0E584D61998E35500387DE2 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimationTracer.mm; sourceTree = "<group>"; };
-		E0E584D71998E35500387DE2 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimationTracerInternal.h; sourceTree = "<group>"; };
-		E0E584D81998E35500387DE2 /* POPAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimator.h; sourceTree = "<group>"; };
-		E0E584D91998E35500387DE2 /* POPAnimator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPAnimator.mm; sourceTree = "<group>"; };
-		E0E584DA1998E35500387DE2 /* POPAnimatorPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPAnimatorPrivate.h; sourceTree = "<group>"; };
-		E0E584DB1998E35500387DE2 /* POPBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPBasicAnimation.h; sourceTree = "<group>"; };
-		E0E584DC1998E35500387DE2 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPBasicAnimation.mm; sourceTree = "<group>"; };
-		E0E584DD1998E35500387DE2 /* POPBasicAnimationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPBasicAnimationInternal.h; sourceTree = "<group>"; };
-		E0E584DE1998E35500387DE2 /* POPCGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPCGUtils.h; sourceTree = "<group>"; };
-		E0E584DF1998E35500387DE2 /* POPCGUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPCGUtils.mm; sourceTree = "<group>"; };
-		E0E584E01998E35500387DE2 /* POPCustomAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPCustomAnimation.h; sourceTree = "<group>"; };
-		E0E584E11998E35500387DE2 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPCustomAnimation.mm; sourceTree = "<group>"; };
-		E0E584E21998E35500387DE2 /* POPDecayAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPDecayAnimation.h; sourceTree = "<group>"; };
-		E0E584E31998E35500387DE2 /* POPDecayAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPDecayAnimation.mm; sourceTree = "<group>"; };
-		E0E584E41998E35500387DE2 /* POPDecayAnimationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPDecayAnimationInternal.h; sourceTree = "<group>"; };
-		E0E584E51998E35500387DE2 /* POPDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPDefines.h; sourceTree = "<group>"; };
-		E0E584E61998E35500387DE2 /* POPGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPGeometry.h; sourceTree = "<group>"; };
-		E0E584E71998E35500387DE2 /* POPGeometry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPGeometry.mm; sourceTree = "<group>"; };
-		E0E584E81998E35500387DE2 /* POPLayerExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPLayerExtras.h; sourceTree = "<group>"; };
-		E0E584E91998E35500387DE2 /* POPLayerExtras.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPLayerExtras.mm; sourceTree = "<group>"; };
-		E0E584EA1998E35500387DE2 /* POPMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPMath.h; sourceTree = "<group>"; };
-		E0E584EB1998E35500387DE2 /* POPMath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPMath.mm; sourceTree = "<group>"; };
-		E0E584EC1998E35500387DE2 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPPropertyAnimation.h; sourceTree = "<group>"; };
-		E0E584ED1998E35500387DE2 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPPropertyAnimation.mm; sourceTree = "<group>"; };
-		E0E584EE1998E35500387DE2 /* POPPropertyAnimationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPPropertyAnimationInternal.h; sourceTree = "<group>"; };
-		E0E584EF1998E35500387DE2 /* POPSpringAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPSpringAnimation.h; sourceTree = "<group>"; };
-		E0E584F01998E35500387DE2 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPSpringAnimation.mm; sourceTree = "<group>"; };
-		E0E584F11998E35500387DE2 /* POPSpringAnimationInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPSpringAnimationInternal.h; sourceTree = "<group>"; };
-		E0E584F21998E35500387DE2 /* POPSpringSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPSpringSolver.h; sourceTree = "<group>"; };
-		E0E584F31998E35500387DE2 /* POPVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POPVector.h; sourceTree = "<group>"; };
-		E0E584F41998E35500387DE2 /* POPVector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = POPVector.mm; sourceTree = "<group>"; };
-		E0E584F61998E35500387DE2 /* FloatConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatConversion.h; sourceTree = "<group>"; };
-		E0E584F71998E35500387DE2 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransformationMatrix.cpp; sourceTree = "<group>"; };
-		E0E584F81998E35500387DE2 /* TransformationMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformationMatrix.h; sourceTree = "<group>"; };
-		E0E584F91998E35500387DE2 /* UnitBezier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitBezier.h; sourceTree = "<group>"; };
-		E0E5850D1998E3AC00387DE2 /* TQTableViewCellRemoveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQTableViewCellRemoveController.h; sourceTree = "<group>"; };
-		E0E5850E1998E3AC00387DE2 /* TQTableViewCellRemoveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQTableViewCellRemoveController.m; sourceTree = "<group>"; };
-		E0E5851019990FAA00387DE2 /* TQCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TQCell.xib; sourceTree = "<group>"; };
-		E0E585151999107600387DE2 /* TQCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQCell.h; sourceTree = "<group>"; };
-		E0E585161999107600387DE2 /* TQCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQCell.m; sourceTree = "<group>"; };
-		E0E58519199913EC00387DE2 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
-		E0E5851A199913EC00387DE2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		E0E5851B199913EC00387DE2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		E0E5851C199913EC00387DE2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
-		E0E5851D199913EC00387DE2 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		E0E5851E199913EC00387DE2 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E0E5848A1998E2EB00387DE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0E584931998E2EB00387DE2 /* CoreGraphics.framework in Frameworks */,
-				E0E584951998E2EB00387DE2 /* UIKit.framework in Frameworks */,
-				E0E584911998E2EB00387DE2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0E584AB1998E2EB00387DE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0E584B01998E2EB00387DE2 /* XCTest.framework in Frameworks */,
-				E0E584B21998E2EC00387DE2 /* UIKit.framework in Frameworks */,
-				E0E584B11998E2EC00387DE2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		E0E584841998E2EB00387DE2 = {
-			isa = PBXGroup;
-			children = (
-				E0E584C51998E35500387DE2 /* FBPop */,
-				E0E5850C1998E37E00387DE2 /* TQRemoveController */,
-				E0E584961998E2EB00387DE2 /* TQTableViewCellRemoveController */,
-				E0E584B51998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests */,
-				E0E5848F1998E2EB00387DE2 /* Frameworks */,
-				E0E5848E1998E2EB00387DE2 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		E0E5848E1998E2EB00387DE2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E0E5848D1998E2EB00387DE2 /* TQTableViewCellRemoveController.app */,
-				E0E584AE1998E2EB00387DE2 /* TQTableViewCellRemoveControllerTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E0E5848F1998E2EB00387DE2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E0E584901998E2EB00387DE2 /* Foundation.framework */,
-				E0E584921998E2EB00387DE2 /* CoreGraphics.framework */,
-				E0E584941998E2EB00387DE2 /* UIKit.framework */,
-				E0E584AF1998E2EB00387DE2 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E0E584961998E2EB00387DE2 /* TQTableViewCellRemoveController */ = {
-			isa = PBXGroup;
-			children = (
-				E0E58518199913EC00387DE2 /* Image */,
-				E0E5849F1998E2EB00387DE2 /* TQAppDelegate.h */,
-				E0E584A01998E2EB00387DE2 /* TQAppDelegate.m */,
-				E0E584A21998E2EB00387DE2 /* Main.storyboard */,
-				E0E585151999107600387DE2 /* TQCell.h */,
-				E0E585161999107600387DE2 /* TQCell.m */,
-				E0E5851019990FAA00387DE2 /* TQCell.xib */,
-				E0E584A51998E2EB00387DE2 /* TQViewController.h */,
-				E0E584A61998E2EB00387DE2 /* TQViewController.m */,
-				E0E584A81998E2EB00387DE2 /* Images.xcassets */,
-				E0E584971998E2EB00387DE2 /* Supporting Files */,
-			);
-			path = TQTableViewCellRemoveController;
-			sourceTree = "<group>";
-		};
-		E0E584971998E2EB00387DE2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0E584981998E2EB00387DE2 /* TQTableViewCellRemoveController-Info.plist */,
-				E0E584991998E2EB00387DE2 /* InfoPlist.strings */,
-				E0E5849C1998E2EB00387DE2 /* main.m */,
-				E0E5849E1998E2EB00387DE2 /* TQTableViewCellRemoveController-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E0E584B51998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				E0E584BB1998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests.m */,
-				E0E584B61998E2EC00387DE2 /* Supporting Files */,
-			);
-			path = TQTableViewCellRemoveControllerTests;
-			sourceTree = "<group>";
-		};
-		E0E584B61998E2EC00387DE2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E0E584B71998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests-Info.plist */,
-				E0E584B81998E2EC00387DE2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E0E584C51998E35500387DE2 /* FBPop */ = {
-			isa = PBXGroup;
-			children = (
-				E0E584C61998E35500387DE2 /* POP.h */,
-				E0E584C71998E35500387DE2 /* POPAction.h */,
-				E0E584C81998E35500387DE2 /* POPAnimatableProperty.h */,
-				E0E584C91998E35500387DE2 /* POPAnimatableProperty.mm */,
-				E0E584CA1998E35500387DE2 /* POPAnimation.h */,
-				E0E584CB1998E35500387DE2 /* POPAnimation.mm */,
-				E0E584CC1998E35500387DE2 /* POPAnimationEvent.h */,
-				E0E584CD1998E35500387DE2 /* POPAnimationEvent.mm */,
-				E0E584CE1998E35500387DE2 /* POPAnimationEventInternal.h */,
-				E0E584CF1998E35500387DE2 /* POPAnimationExtras.h */,
-				E0E584D01998E35500387DE2 /* POPAnimationExtras.mm */,
-				E0E584D11998E35500387DE2 /* POPAnimationInternal.h */,
-				E0E584D21998E35500387DE2 /* POPAnimationPrivate.h */,
-				E0E584D31998E35500387DE2 /* POPAnimationRuntime.h */,
-				E0E584D41998E35500387DE2 /* POPAnimationRuntime.mm */,
-				E0E584D51998E35500387DE2 /* POPAnimationTracer.h */,
-				E0E584D61998E35500387DE2 /* POPAnimationTracer.mm */,
-				E0E584D71998E35500387DE2 /* POPAnimationTracerInternal.h */,
-				E0E584D81998E35500387DE2 /* POPAnimator.h */,
-				E0E584D91998E35500387DE2 /* POPAnimator.mm */,
-				E0E584DA1998E35500387DE2 /* POPAnimatorPrivate.h */,
-				E0E584DB1998E35500387DE2 /* POPBasicAnimation.h */,
-				E0E584DC1998E35500387DE2 /* POPBasicAnimation.mm */,
-				E0E584DD1998E35500387DE2 /* POPBasicAnimationInternal.h */,
-				E0E584DE1998E35500387DE2 /* POPCGUtils.h */,
-				E0E584DF1998E35500387DE2 /* POPCGUtils.mm */,
-				E0E584E01998E35500387DE2 /* POPCustomAnimation.h */,
-				E0E584E11998E35500387DE2 /* POPCustomAnimation.mm */,
-				E0E584E21998E35500387DE2 /* POPDecayAnimation.h */,
-				E0E584E31998E35500387DE2 /* POPDecayAnimation.mm */,
-				E0E584E41998E35500387DE2 /* POPDecayAnimationInternal.h */,
-				E0E584E51998E35500387DE2 /* POPDefines.h */,
-				E0E584E61998E35500387DE2 /* POPGeometry.h */,
-				E0E584E71998E35500387DE2 /* POPGeometry.mm */,
-				E0E584E81998E35500387DE2 /* POPLayerExtras.h */,
-				E0E584E91998E35500387DE2 /* POPLayerExtras.mm */,
-				E0E584EA1998E35500387DE2 /* POPMath.h */,
-				E0E584EB1998E35500387DE2 /* POPMath.mm */,
-				E0E584EC1998E35500387DE2 /* POPPropertyAnimation.h */,
-				E0E584ED1998E35500387DE2 /* POPPropertyAnimation.mm */,
-				E0E584EE1998E35500387DE2 /* POPPropertyAnimationInternal.h */,
-				E0E584EF1998E35500387DE2 /* POPSpringAnimation.h */,
-				E0E584F01998E35500387DE2 /* POPSpringAnimation.mm */,
-				E0E584F11998E35500387DE2 /* POPSpringAnimationInternal.h */,
-				E0E584F21998E35500387DE2 /* POPSpringSolver.h */,
-				E0E584F31998E35500387DE2 /* POPVector.h */,
-				E0E584F41998E35500387DE2 /* POPVector.mm */,
-				E0E584F51998E35500387DE2 /* WebCore */,
-			);
-			path = FBPop;
-			sourceTree = "<group>";
-		};
-		E0E584F51998E35500387DE2 /* WebCore */ = {
-			isa = PBXGroup;
-			children = (
-				E0E584F61998E35500387DE2 /* FloatConversion.h */,
-				E0E584F71998E35500387DE2 /* TransformationMatrix.cpp */,
-				E0E584F81998E35500387DE2 /* TransformationMatrix.h */,
-				E0E584F91998E35500387DE2 /* UnitBezier.h */,
-			);
-			path = WebCore;
-			sourceTree = "<group>";
-		};
-		E0E5850C1998E37E00387DE2 /* TQRemoveController */ = {
-			isa = PBXGroup;
-			children = (
-				E0E5850D1998E3AC00387DE2 /* TQTableViewCellRemoveController.h */,
-				E0E5850E1998E3AC00387DE2 /* TQTableViewCellRemoveController.m */,
-			);
-			path = TQRemoveController;
-			sourceTree = "<group>";
-		};
-		E0E58518199913EC00387DE2 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				E0E58519199913EC00387DE2 /* 0.jpg */,
-				E0E5851A199913EC00387DE2 /* 1.jpg */,
-				E0E5851B199913EC00387DE2 /* 2.jpg */,
-				E0E5851C199913EC00387DE2 /* 3.jpg */,
-				E0E5851D199913EC00387DE2 /* 4.jpg */,
-				E0E5851E199913EC00387DE2 /* 5.jpg */,
-			);
-			path = Image;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		E0E5848C1998E2EB00387DE2 /* TQTableViewCellRemoveController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0E584BF1998E2EC00387DE2 /* Build configuration list for PBXNativeTarget "TQTableViewCellRemoveController" */;
-			buildPhases = (
-				E0E584891998E2EB00387DE2 /* Sources */,
-				E0E5848A1998E2EB00387DE2 /* Frameworks */,
-				E0E5848B1998E2EB00387DE2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TQTableViewCellRemoveController;
-			productName = TQTableViewCellRemoveController;
-			productReference = E0E5848D1998E2EB00387DE2 /* TQTableViewCellRemoveController.app */;
-			productType = "com.apple.product-type.application";
-		};
-		E0E584AD1998E2EB00387DE2 /* TQTableViewCellRemoveControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E0E584C21998E2EC00387DE2 /* Build configuration list for PBXNativeTarget "TQTableViewCellRemoveControllerTests" */;
-			buildPhases = (
-				E0E584AA1998E2EB00387DE2 /* Sources */,
-				E0E584AB1998E2EB00387DE2 /* Frameworks */,
-				E0E584AC1998E2EB00387DE2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E0E584B41998E2EC00387DE2 /* PBXTargetDependency */,
-			);
-			name = TQTableViewCellRemoveControllerTests;
-			productName = TQTableViewCellRemoveControllerTests;
-			productReference = E0E584AE1998E2EB00387DE2 /* TQTableViewCellRemoveControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		E0E584851998E2EB00387DE2 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = TQ;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "___FULLUSERNAME___";
-				TargetAttributes = {
-					E0E584AD1998E2EB00387DE2 = {
-						TestTargetID = E0E5848C1998E2EB00387DE2;
-					};
-				};
-			};
-			buildConfigurationList = E0E584881998E2EB00387DE2 /* Build configuration list for PBXProject "TQTableViewCellRemoveController" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = E0E584841998E2EB00387DE2;
-			productRefGroup = E0E5848E1998E2EB00387DE2 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				E0E5848C1998E2EB00387DE2 /* TQTableViewCellRemoveController */,
-				E0E584AD1998E2EB00387DE2 /* TQTableViewCellRemoveControllerTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		E0E5848B1998E2EB00387DE2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0E5851119990FAA00387DE2 /* TQCell.xib in Resources */,
-				E0E58524199913EC00387DE2 /* 5.jpg in Resources */,
-				E0E5851F199913EC00387DE2 /* 0.jpg in Resources */,
-				E0E58521199913EC00387DE2 /* 2.jpg in Resources */,
-				E0E584A91998E2EB00387DE2 /* Images.xcassets in Resources */,
-				E0E58520199913EC00387DE2 /* 1.jpg in Resources */,
-				E0E5849B1998E2EB00387DE2 /* InfoPlist.strings in Resources */,
-				E0E58523199913EC00387DE2 /* 4.jpg in Resources */,
-				E0E584A41998E2EB00387DE2 /* Main.storyboard in Resources */,
-				E0E58522199913EC00387DE2 /* 3.jpg in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0E584AC1998E2EB00387DE2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0E584BA1998E2EC00387DE2 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E0E584891998E2EB00387DE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0E584A71998E2EB00387DE2 /* TQViewController.m in Sources */,
-				E0E584FE1998E35500387DE2 /* POPAnimationRuntime.mm in Sources */,
-				E0E5850A1998E35500387DE2 /* POPVector.mm in Sources */,
-				E0E584FB1998E35500387DE2 /* POPAnimation.mm in Sources */,
-				E0E584FF1998E35500387DE2 /* POPAnimationTracer.mm in Sources */,
-				E0E5849D1998E2EB00387DE2 /* main.m in Sources */,
-				E0E585051998E35500387DE2 /* POPGeometry.mm in Sources */,
-				E0E585171999107600387DE2 /* TQCell.m in Sources */,
-				E0E5850B1998E35500387DE2 /* TransformationMatrix.cpp in Sources */,
-				E0E584FD1998E35500387DE2 /* POPAnimationExtras.mm in Sources */,
-				E0E584FC1998E35500387DE2 /* POPAnimationEvent.mm in Sources */,
-				E0E584FA1998E35500387DE2 /* POPAnimatableProperty.mm in Sources */,
-				E0E585001998E35500387DE2 /* POPAnimator.mm in Sources */,
-				E0E585041998E35500387DE2 /* POPDecayAnimation.mm in Sources */,
-				E0E585091998E35500387DE2 /* POPSpringAnimation.mm in Sources */,
-				E0E585081998E35500387DE2 /* POPPropertyAnimation.mm in Sources */,
-				E0E585011998E35500387DE2 /* POPBasicAnimation.mm in Sources */,
-				E0E585061998E35500387DE2 /* POPLayerExtras.mm in Sources */,
-				E0E584A11998E2EB00387DE2 /* TQAppDelegate.m in Sources */,
-				E0E5850F1998E3AC00387DE2 /* TQTableViewCellRemoveController.m in Sources */,
-				E0E585021998E35500387DE2 /* POPCGUtils.mm in Sources */,
-				E0E585071998E35500387DE2 /* POPMath.mm in Sources */,
-				E0E585031998E35500387DE2 /* POPCustomAnimation.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E0E584AA1998E2EB00387DE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0E584BC1998E2EC00387DE2 /* TQTableViewCellRemoveControllerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E0E584B41998E2EC00387DE2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E0E5848C1998E2EB00387DE2 /* TQTableViewCellRemoveController */;
-			targetProxy = E0E584B31998E2EC00387DE2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E0E584991998E2EB00387DE2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0E5849A1998E2EB00387DE2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E0E584A21998E2EB00387DE2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0E584A31998E2EB00387DE2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E0E584B81998E2EC00387DE2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E0E584B91998E2EC00387DE2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		E0E584BD1998E2EC00387DE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		E0E584BE1998E2EC00387DE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E0E584C01998E2EC00387DE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch";
-				INFOPLIST_FILE = "TQTableViewCellRemoveController/TQTableViewCellRemoveController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		E0E584C11998E2EC00387DE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch";
-				INFOPLIST_FILE = "TQTableViewCellRemoveController/TQTableViewCellRemoveController-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		E0E584C31998E2EC00387DE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TQTableViewCellRemoveController.app/TQTableViewCellRemoveController";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TQTableViewCellRemoveControllerTests/TQTableViewCellRemoveControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		E0E584C41998E2EC00387DE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TQTableViewCellRemoveController.app/TQTableViewCellRemoveController";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch";
-				INFOPLIST_FILE = "TQTableViewCellRemoveControllerTests/TQTableViewCellRemoveControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		E0E584881998E2EB00387DE2 /* Build configuration list for PBXProject "TQTableViewCellRemoveController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E0E584BD1998E2EC00387DE2 /* Debug */,
-				E0E584BE1998E2EC00387DE2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0E584BF1998E2EC00387DE2 /* Build configuration list for PBXNativeTarget "TQTableViewCellRemoveController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E0E584C01998E2EC00387DE2 /* Debug */,
-				E0E584C11998E2EC00387DE2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		E0E584C21998E2EC00387DE2 /* Build configuration list for PBXNativeTarget "TQTableViewCellRemoveControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E0E584C31998E2EC00387DE2 /* Debug */,
-				E0E584C41998E2EC00387DE2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = E0E584851998E2EB00387DE2 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>10B587D76D9942718EC482EE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>16304DAAB6054E6490F744D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>16304DAAB6054E6490F744D8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-TQTableViewCellRemoveController.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B8D15A72108E4C15A958B312</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C647DF4949F8416CA5840565</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TQTableViewCellRemoveController.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-TQTableViewCellRemoveController.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D252AFC11A8E462EB5F17D3D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-TQTableViewCellRemoveController-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E0E584841998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E5850C1998E37E00387DE2</string>
+				<string>E0E584961998E2EB00387DE2</string>
+				<string>E0E584B51998E2EC00387DE2</string>
+				<string>E0E5848F1998E2EB00387DE2</string>
+				<string>E0E5848E1998E2EB00387DE2</string>
+				<string>C647DF4949F8416CA5840565</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584851998E2EB00387DE2</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>TQ</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>___FULLUSERNAME___</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>E0E584AD1998E2EB00387DE2</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>E0E5848C1998E2EB00387DE2</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>E0E584881998E2EB00387DE2</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>E0E584841998E2EB00387DE2</string>
+			<key>productRefGroup</key>
+			<string>E0E5848E1998E2EB00387DE2</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E0E5848C1998E2EB00387DE2</string>
+				<string>E0E584AD1998E2EB00387DE2</string>
+			</array>
+		</dict>
+		<key>E0E584881998E2EB00387DE2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E0E584BD1998E2EC00387DE2</string>
+				<string>E0E584BE1998E2EC00387DE2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E0E584891998E2EB00387DE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0E584A71998E2EB00387DE2</string>
+				<string>E0E5849D1998E2EB00387DE2</string>
+				<string>E0E585171999107600387DE2</string>
+				<string>E0E584A11998E2EB00387DE2</string>
+				<string>E0E5850F1998E3AC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E0E5848A1998E2EB00387DE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0E584931998E2EB00387DE2</string>
+				<string>E0E584951998E2EB00387DE2</string>
+				<string>E0E584911998E2EB00387DE2</string>
+				<string>10B587D76D9942718EC482EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E0E5848B1998E2EB00387DE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0E5851119990FAA00387DE2</string>
+				<string>E0E58524199913EC00387DE2</string>
+				<string>E0E5851F199913EC00387DE2</string>
+				<string>E0E58521199913EC00387DE2</string>
+				<string>E0E584A91998E2EB00387DE2</string>
+				<string>E0E58520199913EC00387DE2</string>
+				<string>E0E5849B1998E2EB00387DE2</string>
+				<string>E0E58523199913EC00387DE2</string>
+				<string>E0E584A41998E2EB00387DE2</string>
+				<string>E0E58522199913EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E0E5848C1998E2EB00387DE2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E0E584BF1998E2EC00387DE2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B8D15A72108E4C15A958B312</string>
+				<string>E0E584891998E2EB00387DE2</string>
+				<string>E0E5848A1998E2EB00387DE2</string>
+				<string>E0E5848B1998E2EB00387DE2</string>
+				<string>D252AFC11A8E462EB5F17D3D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TQTableViewCellRemoveController</string>
+			<key>productName</key>
+			<string>TQTableViewCellRemoveController</string>
+			<key>productReference</key>
+			<string>E0E5848D1998E2EB00387DE2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>E0E5848D1998E2EB00387DE2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveController.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E0E5848E1998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E5848D1998E2EB00387DE2</string>
+				<string>E0E584AE1998E2EB00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5848F1998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E584901998E2EB00387DE2</string>
+				<string>E0E584921998E2EB00387DE2</string>
+				<string>E0E584941998E2EB00387DE2</string>
+				<string>E0E584AF1998E2EB00387DE2</string>
+				<string>16304DAAB6054E6490F744D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584901998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E0E584911998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584901998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584921998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E0E584931998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584921998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584941998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>E0E584951998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584941998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584961998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E58518199913EC00387DE2</string>
+				<string>E0E5849F1998E2EB00387DE2</string>
+				<string>E0E584A01998E2EB00387DE2</string>
+				<string>E0E584A21998E2EB00387DE2</string>
+				<string>E0E585151999107600387DE2</string>
+				<string>E0E585161999107600387DE2</string>
+				<string>E0E5851019990FAA00387DE2</string>
+				<string>E0E584A51998E2EB00387DE2</string>
+				<string>E0E584A61998E2EB00387DE2</string>
+				<string>E0E584A81998E2EB00387DE2</string>
+				<string>E0E584971998E2EB00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584971998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E584981998E2EB00387DE2</string>
+				<string>E0E584991998E2EB00387DE2</string>
+				<string>E0E5849C1998E2EB00387DE2</string>
+				<string>E0E5849E1998E2EB00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584981998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveController-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584991998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E5849A1998E2EB00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5849A1998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5849B1998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584991998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E5849C1998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5849D1998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5849C1998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E5849E1998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveController-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5849F1998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TQAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A01998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TQAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A11998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584A01998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584A21998E2EB00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E584A31998E2EB00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A31998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A41998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584A21998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584A51998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TQViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A61998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TQViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A71998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584A61998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584A81998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584A91998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584A81998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584AA1998E2EB00387DE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0E584BC1998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E0E584AB1998E2EB00387DE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0E584B01998E2EB00387DE2</string>
+				<string>E0E584B21998E2EC00387DE2</string>
+				<string>E0E584B11998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E0E584AC1998E2EB00387DE2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E0E584BA1998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>E0E584AD1998E2EB00387DE2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E0E584C21998E2EC00387DE2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E0E584AA1998E2EB00387DE2</string>
+				<string>E0E584AB1998E2EB00387DE2</string>
+				<string>E0E584AC1998E2EB00387DE2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>E0E584B41998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TQTableViewCellRemoveControllerTests</string>
+			<key>productName</key>
+			<string>TQTableViewCellRemoveControllerTests</string>
+			<key>productReference</key>
+			<string>E0E584AE1998E2EB00387DE2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>E0E584AE1998E2EB00387DE2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveControllerTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>E0E584AF1998E2EB00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>E0E584B01998E2EB00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584AF1998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584B11998E2EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584901998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584B21998E2EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584941998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584B31998E2EC00387DE2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>E0E584851998E2EB00387DE2</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E0E5848C1998E2EB00387DE2</string>
+			<key>remoteInfo</key>
+			<string>TQTableViewCellRemoveController</string>
+		</dict>
+		<key>E0E584B41998E2EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>E0E5848C1998E2EB00387DE2</string>
+			<key>targetProxy</key>
+			<string>E0E584B31998E2EC00387DE2</string>
+		</dict>
+		<key>E0E584B51998E2EC00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E584BB1998E2EC00387DE2</string>
+				<string>E0E584B61998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveControllerTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584B61998E2EC00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E584B71998E2EC00387DE2</string>
+				<string>E0E584B81998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584B71998E2EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveControllerTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584B81998E2EC00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E584B91998E2EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584B91998E2EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584BA1998E2EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584B81998E2EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584BB1998E2EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveControllerTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E584BC1998E2EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E584BB1998E2EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E584BD1998E2EC00387DE2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E0E584BE1998E2EC00387DE2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E0E584BF1998E2EC00387DE2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E0E584C01998E2EC00387DE2</string>
+				<string>E0E584C11998E2EC00387DE2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E0E584C01998E2EC00387DE2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C647DF4949F8416CA5840565</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TQTableViewCellRemoveController/TQTableViewCellRemoveController-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E0E584C11998E2EC00387DE2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C647DF4949F8416CA5840565</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TQTableViewCellRemoveController/TQTableViewCellRemoveController-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E0E584C21998E2EC00387DE2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E0E584C31998E2EC00387DE2</string>
+				<string>E0E584C41998E2EC00387DE2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E0E584C31998E2EC00387DE2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TQTableViewCellRemoveController.app/TQTableViewCellRemoveController</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TQTableViewCellRemoveControllerTests/TQTableViewCellRemoveControllerTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E0E584C41998E2EC00387DE2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TQTableViewCellRemoveController.app/TQTableViewCellRemoveController</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TQTableViewCellRemoveController/TQTableViewCellRemoveController-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TQTableViewCellRemoveControllerTests/TQTableViewCellRemoveControllerTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E0E5850C1998E37E00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E5850D1998E3AC00387DE2</string>
+				<string>E0E5850E1998E3AC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TQRemoveController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5850D1998E3AC00387DE2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5850E1998E3AC00387DE2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TQTableViewCellRemoveController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5850F1998E3AC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5850E1998E3AC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E5851019990FAA00387DE2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>TQCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851119990FAA00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5851019990FAA00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E585151999107600387DE2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TQCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E585161999107600387DE2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TQCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E585171999107600387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E585161999107600387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E58518199913EC00387DE2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E0E58519199913EC00387DE2</string>
+				<string>E0E5851A199913EC00387DE2</string>
+				<string>E0E5851B199913EC00387DE2</string>
+				<string>E0E5851C199913EC00387DE2</string>
+				<string>E0E5851D199913EC00387DE2</string>
+				<string>E0E5851E199913EC00387DE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Image</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E58519199913EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>0.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851A199913EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>1.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851B199913EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>2.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851C199913EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>3.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851D199913EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>4.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851E199913EC00387DE2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>5.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E0E5851F199913EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E58519199913EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E58520199913EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5851A199913EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E58521199913EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5851B199913EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E58522199913EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5851C199913EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E58523199913EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5851D199913EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0E58524199913EC00387DE2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E0E5851E199913EC00387DE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>E0E584851998E2EB00387DE2</string>
+</dict>
+</plist>

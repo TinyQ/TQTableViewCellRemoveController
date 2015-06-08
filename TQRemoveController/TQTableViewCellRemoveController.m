@@ -41,7 +41,7 @@
                                                                   prop.writeBlock = ^(UIView *view, const CGFloat values[]) {
                                                                       
                                                                       view.transform = [self transformWithPoint:CGPointMake(values[0], values[1])];
-                                                                      view.alpha     = (view.bounds.size.width - fabsf(values[0]))/view.bounds.size.width;
+                                                                      view.alpha     = (view.bounds.size.width - fabs(values[0]))/view.bounds.size.width;
                                                                       
                                                                   };
                                                                   prop.readBlock = ^(UIView *view, CGFloat values[]) {
@@ -83,7 +83,7 @@
             if (self.handlingViewCell)
             {
                 self.handlingViewCell.transform = [self transformWithPoint:point];
-                self.handlingViewCell.alpha     = (panGestureRecognizer.view.bounds.size.width - fabsf(point.x))/ panGestureRecognizer.view.bounds.size.width;
+                self.handlingViewCell.alpha     = (panGestureRecognizer.view.bounds.size.width - fabs(point.x))/ panGestureRecognizer.view.bounds.size.width;
             }
         }
             break;
@@ -94,7 +94,7 @@
             {
                 CGPoint velocity = [panGestureRecognizer velocityInView:self.tableView];
                 
-                if (fabsf(point.x) > panGestureRecognizer.view.bounds.size.width / 2 || fabsf(velocity.x) > 2000)
+                if (fabs(point.x) > panGestureRecognizer.view.bounds.size.width / 2 || fabs(velocity.x) > 2000)
                 {
                     NSInteger k = point.x > 0 ? 1 : -1;
                     
@@ -147,7 +147,7 @@
         CGPoint translation = [gestureRecognizer translationInView:[cell superview]];
         
         // Check for horizontal gesture
-        if (fabsf(translation.x) > fabsf(translation.y))
+        if (fabs(translation.x) > fabs(translation.y))
         {
             return YES;
         }
@@ -163,7 +163,7 @@
         UIView *cell = [gestureRecognizer view];
         CGPoint translation = [(UIPanGestureRecognizer *)gestureRecognizer translationInView:[cell superview]];
         
-        if (fabsf(translation.x) > fabsf(translation.y))
+        if (fabs(translation.x) > fabs(translation.y))
         {
             return NO;
         }
@@ -182,13 +182,13 @@
 {
     CGFloat Px = point.x;
     
-    if (fabsf(Px) <=50)
+    if (fabs(Px) <=50)
     {
         Px = 0;
     }
     else
     {
-        Px = point.x - (50 * point.x/fabsf(point.x));
+        Px = point.x - (50 * point.x/fabs(point.x));
     }
     
     double r2 = pow(TURN_R, 2);
